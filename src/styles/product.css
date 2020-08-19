@@ -1,0 +1,68 @@
+.product {
+    width: 80vw;
+    background-color: whitesmoke;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px auto;
+    text-align: left;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.addToCartButton {
+    font-size: 20px;
+    height: 50px;
+    margin: auto 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: seagreen;
+}
+
+.addToCartButton:hover {
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+.deleteFromCartButton {
+    font-size: 20px;
+    height: 50px;
+    margin: auto 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.deleteFromCartButton:hover {
+    background-color: darkred;
+    cursor: pointer;
+}
+
+.addToFavouriteButton {
+    font-size: 20px;
+    height: 50px;
+    margin: auto 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ac224c;
+}
+
+.addToFavouriteButton:hover {
+    background-color: #e336af;
+    cursor: pointer;
+}
+
+.defaultButton {
+    font-size: 20px;
+    height: 50px;
+    margin: auto 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #276334;
+}
+
+.defaultButton:hover {
+    background-color: #6aaf71;
+    cursor: pointer;
+}

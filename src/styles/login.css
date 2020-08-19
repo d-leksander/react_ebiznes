@@ -1,0 +1,42 @@
+.login {
+    width: 40vw;
+    background-color: whitesmoke;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 100px auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.facebookLogin {
+    color: white;
+    margin: 10px;
+    background-color: #4267B2;
+}
+
+.facebookbLogin:hover {
+    color: white;
+    background-color: #1f4ca5;
+}
+
+.googleLogin {
+    color: white;
+    margin: 10px;
+    background-color: #336b2f;
+}
+
+.googleLogin:hover {
+    background-color: #204c24;
+}
+
+.loginButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: bold;
+}

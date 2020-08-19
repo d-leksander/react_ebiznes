@@ -1,0 +1,12 @@
+.user {
+    width: 80vw;
+    background-color: whitesmoke;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px auto;
+    text-align: left;
+    padding: 10px;
+    border-radius: 20px;
+}
