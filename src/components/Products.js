@@ -83,15 +83,18 @@ class Products extends Component {
         return (
             <div>
                 <div>
-                    <h1>Products</h1>
+                    <h1>Products available in the store</h1>
                     <a href="http://localhost:3000/" className="back">Back</a>
-                    <label>Select category </label>
-                    <select id="myList" onChange={this.handleCategoryChange}>
-                        <option key={0} value={null}></option>
-                        {this.state.categories
-                            ? this.state.categories.map(c => <option key={c.idCategories} value={c.idCategories}>{c.name}</option>)
-                            : null}
-                    </select>
+                    <div>
+                        <label className="myList">Select category </label>
+                        <select className="myList" onChange={this.handleCategoryChange}>
+                            <option key={0} value={null}></option>
+                            {this.state.categories
+                                ? this.state.categories.map(c => <option key={c.idCategories} value={c.idCategories}>{c.name}</option>)
+                                : null}
+                        </select>
+                    </div>
+
                 </div>
                 {this.displayFilteredProducts()}
             </div>

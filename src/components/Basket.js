@@ -193,7 +193,7 @@ class Basket extends Component {
             .then(response => response.json())
             .then(data => {
                 if (data) {
-                    alert("Paynment successful!")
+                    alert("Payment successful!")
                 } else {
                     alert(`Error occurred!`);
                 }

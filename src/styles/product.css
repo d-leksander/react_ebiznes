@@ -1,6 +1,12 @@
+.prodView {
+    width: 95vw;
+    padding-left: 30px;
+}
+
 .product {
     width: 80vw;
-    background-color: whitesmoke;
+    background-color: #55689c;
+    color: white;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -9,19 +15,40 @@
     text-align: left;
     padding: 10px;
     border-radius: 20px;
+    float: left;
+    border: double darkblue;
+}
+.product:hover {
+    background-color: #345895;
+}
+.productOperation {
+    width: 10vw;
+    background-color: #c1b8b8;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px auto;
+    text-align: left;
+    padding: 21px;
+    border-radius: 20px;
+    float: right;
+    border: double darkblue;
 }
 
 .addToCartButton {
     font-size: 20px;
+    color: white;
     height: 50px;
-    margin: auto 20px;
+    margin: auto 10px;
     border: none;
     border-radius: 10px;
-    background-color: seagreen;
+    background-color: darkorange;
+    border: solid 2px #c73900;
 }
 
 .addToCartButton:hover {
-    background-color: greenyellow;
+    background-color: crimson;
     cursor: pointer;
 }
 
@@ -41,15 +68,17 @@
 
 .addToFavouriteButton {
     font-size: 20px;
+    color: white;
     height: 50px;
-    margin: auto 20px;
+    margin: auto 10px;
     border: none;
     border-radius: 10px;
-    background-color: #ac224c;
+    background-color: darkorange;
+    border: solid 2px #c73900;
 }
 
 .addToFavouriteButton:hover {
-    background-color: #e336af;
+    background-color: crimson;
     cursor: pointer;
 }
 

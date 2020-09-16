@@ -55,13 +55,16 @@ class Product extends Component {
         const productData = this.props.productData;
         const user = this.props.user;
         return (
+            <div className="prodView">
             <div className="product">
                 <div className="productSpecs">
-                    <h1 className="title">{productData.name}</h1>
-                    <h3 className="price">{productData.price}$</h3>
+                    <h3 className="title">{productData.name}</h3>
+                    <h1 className="price">{productData.price}$</h1>
                 </div>
                 <p className="description">{productData.description}</p>
-                <div>
+
+            </div>
+                <div className="productOperation">
                     <button className="addToCartButton"
                             onClick={() => this.addToCart(user.id, productData.idProducts)}>
                         Add to cart

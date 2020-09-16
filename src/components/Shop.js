@@ -2,8 +2,12 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import LogoutButton from "./LogoutButton";
 import {refreshPage} from "../helpers/reload"
-
-
+import PersonIcon from '@material-ui/icons/Person';
+import ShopIcon from '@material-ui/icons/Shop';
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import VpnKeyIcon from '@material-ui/icons/VpnKey';
+import backgr from './images/background.jpg'
+import lightBlue from "@material-ui/core/colors/lightBlue";
 const host = "http://localhost:9000/";
 
 function signOut(user) {
@@ -28,14 +32,18 @@ class Shop extends Component {
     render() {
         return (
             <div>
-                <h1>eShop</h1>
+                <h1>Welcome to the online store</h1>
                 <div onClick={() => refreshPage()}><LogoutButton> </LogoutButton></div>
                 <nav>
-                    <div><Link to="/products" className="link">Products</Link></div>
-                    <div><Link to="/user" className="link">User</Link></div>
-                    <div><Link to="/basket" className="link">Basket</Link></div>
-                    <div><Link to="/login" className="link">Login</Link></div>
+                    <div><ShopIcon fontSize="large" style={{ color: lightBlue[50] }}/><Link to="/products" className="link">Products</Link></div>
+                    <div><PersonIcon fontSize="large" style={{ color: lightBlue[50] }}/><Link to="/user" className="link">User</Link></div>
+                    <div><ShoppingBasketIcon fontSize="large" style={{ color: lightBlue[50] }}/> <Link to="/basket" className="link">Basket</Link></div>
+                    <div><VpnKeyIcon fontSize="large" style={{ color: lightBlue[50] }}/> <Link to="/login" className="link">Login</Link></div>
                 </nav>
+                <img src={backgr} alt="backgr" />
+
+
+
             </div>
         )
     }

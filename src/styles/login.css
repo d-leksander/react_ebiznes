@@ -1,23 +1,28 @@
 .login {
-    width: 40vw;
-    background-color: whitesmoke;
-    height: auto;
+    width: 50vw;
+    background-color: #6b80ee;
+    height: 25vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 100px auto;
+    margin: 125px auto;
     text-align: center;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 50px;
+    border-radius: 30px;
+    font-family: Verdana;
+    color: darkblue;
 }
 
 .facebookLogin {
     color: white;
     margin: 10px;
     background-color: #4267B2;
+    font-family: Verdana;
+    width: 400px;
+    border-radius: 20px;
 }
 
-.facebookbLogin:hover {
+.facebookLogin:hover {
     color: white;
     background-color: #1f4ca5;
 }
@@ -25,18 +30,36 @@
 .googleLogin {
     color: white;
     margin: 10px;
-    background-color: #336b2f;
+    background-color: rgba(178, 34, 34, 0.47);
+    font-family: Verdana;
+    width: 400px;
+    border-radius: 20px;
 }
 
 .googleLogin:hover {
-    background-color: #204c24;
+    background-color: brown;
 }
 
 .loginButtons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
     font-weight: bold;
+}
+.llogin {
+    position: center;
+    background-color: #4267B2;
+    top: 2vh;
+    right: 1vw;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    font-family: Verdana;
+    border-radius: 20px;
+    padding: 10px;
+}
+.llogin:hover{
+    background-color: #1f4ca5;
 }

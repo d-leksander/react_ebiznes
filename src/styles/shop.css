@@ -1,49 +1,64 @@
 .App {
     width: 100vw;
     height: 100vh;
-    background-color: white;
+    background-color: whitesmoke;
     align-items: center;
     text-align: center;
     justify-content: center;
+    font-family: Verdana;
+    color: darkblue;
 }
 
 nav {
     display: flex;
-    flex-direction: row;
-    background-color: seagreen;
+    flex-direction: row-reverse;
+    background-color: #6b80ee;
     justify-content: space-around;
+    padding: 20px;
+    border-top: 5px double darkblue;
+    border-bottom: 5px double darkblue;
 }
 
 .link {
-    color: black;
-    font-size: 30px;
+    color: white;
+    font-family: Verdana;
+    font-size: 25px;
     text-decoration: none;
 }
 
 .link:hover {
-    color: white;
+    color: darkblue;
     cursor: pointer;
+    background-color: #1f4ca5;
+    display: contents;
 }
 
 .back {
     position: absolute;
     top: 2vh;
     right: 1vw;
-    font-size: 30px;
+    font-size: 25px;
     cursor: pointer;
+    border-radius: 15px;
+    background-color: #6b80ee;
+    color: whitesmoke;
+    padding: 5px;
 }
 
 .back:hover {
-    color: #336b2f;
+    color: darkblue;
+    padding: 10px;
 }
 
 .description {
     max-width: 50%;
+    font-size: 20px;
 }
 
 .myList {
-    font-size: 21px;
+    font-size: 20px;
     margin: 20px 0;
+    color: darkred;
 }
 
 .basket {
