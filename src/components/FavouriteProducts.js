@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import "../styles/product.css";
 import {refreshPage} from "../helpers/reload"
+import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
 
 class FavouriteProducts extends Component {
     deleteFromFavourites = (idFavourites) => {
@@ -29,18 +30,21 @@ class FavouriteProducts extends Component {
         const favourites = this.props.favourites;
         return (
             <div>
-                <h1>Favourite products</h1>
+                <h2>Your favourite products</h2>
                 {favourites.map(f => {
-                    return <div className="product" key={f.idProducts}>
-                        <h1 className="title">{f.name}</h1>
+                    return <div className="favOutherView">
+                        <div className="favInnerView" key={f.idProducts}>
+                        <h2 className="title">{f.name}</h2>
                         <p className="description">{f.description}</p>
-                        <button className="deleteFromCartButton"
-                                onClick={() => {
-                                    this.deleteFromFavourites(f.idFavourites)
-                                    refreshPage();
-                                }}
-                        >Remove from favourite
-                        </button>
+                    </div>
+                        <div className="favOperation">
+                            <button className="deleteFromCartButton" onClick={() => {
+                                this.deleteFromFavourites(f.idFavourites)
+                                refreshPage();
+                            }}
+                            ><RemoveCircleOutlineIcon fontSize="small" style={{color: "lightblue"[50]}}/> Remove
+                            </button>
+                        </div>
                     </div>
                 })}
             </div>

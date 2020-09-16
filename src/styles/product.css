@@ -1,9 +1,13 @@
-.prodView {
+.prodOutherView {
+    width: 95vw;
+    padding-left: 30px;
+}
+.favOutherView {
     width: 95vw;
     padding-left: 30px;
 }
 
-.product {
+.prodInnerView {
     width: 80vw;
     background-color: #55689c;
     color: white;
@@ -18,9 +22,78 @@
     float: left;
     border: double darkblue;
 }
+.prodInnerView:hover {
+    background-color: #345895;
+    color: navajowhite;
+ }
+.favInnerView {
+    width: 80vw;
+    background-color: #55689c;
+    color: white;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px auto;
+    text-align: left;
+    padding: 10px;
+    border-radius: 20px;
+    float: left;
+    border: double darkblue;
+}
+.favInnerView:hover {
+    background-color: #345895;
+    color: yellow;
+}
+.favOperation {
+    width: 10vw;
+    background-color: #c1b8b8;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px auto;
+    text-align: left;
+    padding: 21px;
+    border-radius: 20px;
+    float: right;
+    border: double darkblue;
+}
+.basketOperation {
+    width: 10vw;
+    background-color: #c1b8b8;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px auto;
+    text-align: left;
+    padding: 46px 21px;
+    border-radius: 20px;
+    float: right;
+    border: double darkblue;
+}
+
+.product {
+    width: 70vw;
+    background-color: #55689c;
+    color: white;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px auto;
+    text-align: left;
+    padding: 10px;
+    border-radius: 20px;
+    border: double darkblue;
+}
+
 .product:hover {
     background-color: #345895;
+    color: greenyellow;
 }
+
 .productOperation {
     width: 10vw;
     background-color: #c1b8b8;
@@ -41,28 +114,28 @@
     color: white;
     height: 50px;
     margin: auto 10px;
-    border: none;
     border-radius: 10px;
     background-color: darkorange;
     border: solid 2px #c73900;
 }
 
 .addToCartButton:hover {
-    background-color: crimson;
+    background-color: yellowgreen;
     cursor: pointer;
 }
 
 .deleteFromCartButton {
     font-size: 20px;
+    color: white;
     height: 50px;
-    margin: auto 20px;
-    border: none;
+    margin: auto 10px;
     border-radius: 10px;
-    background-color: red;
+    background-color: darkorange;
+    border: solid 2px #c73900;
 }
 
 .deleteFromCartButton:hover {
-    background-color: darkred;
+    background-color: crimson;
     cursor: pointer;
 }
 
@@ -71,14 +144,13 @@
     color: white;
     height: 50px;
     margin: auto 10px;
-    border: none;
     border-radius: 10px;
     background-color: darkorange;
     border: solid 2px #c73900;
 }
 
 .addToFavouriteButton:hover {
-    background-color: crimson;
+    background-color: #ecc901;
     cursor: pointer;
 }
 
@@ -86,12 +158,28 @@
     font-size: 20px;
     height: 50px;
     margin: auto 20px;
-    border: none;
     border-radius: 10px;
     background-color: #276334;
 }
-
+.buyButton {
+    font-size: 30px;
+    color: white;
+    width: 50%;
+    height: 70px;
+    margin: auto 10px;
+    border-radius: 20px;
+    background-color: darkorange;
+    border: solid 2px #c73900;
+}
 .defaultButton:hover {
     background-color: #6aaf71;
     cursor: pointer;
+}
+.buyButton:hover {
+    background-color: yellowgreen;
+    cursor: pointer;
+    border: 2px solid green;
+}
+.enter {
+color: whitesmoke;
 }

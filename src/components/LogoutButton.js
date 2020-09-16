@@ -23,7 +23,7 @@ export default function LogoutButton() {
     }
 
     return (
-        <button className="back" onClick={handleLogOut}>
+        <button className="logout" onClick={handleLogOut}>
             Logout
         </button>
     )

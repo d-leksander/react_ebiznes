@@ -232,18 +232,18 @@ class Basket extends Component {
     render() {
         return (
             <div className="basket">
-                <h1>Basket</h1>
+                <h1>Your basket</h1>
                 <a href="http://localhost:3000/" className="back">Back</a>
                 {this.displayFilteredProducts()}
                 <div>
-                    <label className="myList">Select delivery </label>
+                    <label className="myList">Select delivery</label>
                     <select className="myList" onChange={this.handleDeliveryChange}>
                         <option key={0} value={null}></option>
                         {this.showDeliveries()}
                     </select>
                 </div>
-                {this.state.cartSum ? <h1>Sum: {this.state.cartSum}$</h1> : null}
-                <button className="defaultButton"
+                {this.state.cartSum ? <h1>Sum: {this.state.cartSum} zł</h1> : null}
+                <button className="buyButton"
                         onClick={this.handlePurchase}
                 >Buy products
                 </button>

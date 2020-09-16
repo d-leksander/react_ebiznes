@@ -145,13 +145,19 @@ class User extends Component {
         return (
             <div>
                 <a href="http://localhost:3000/" className="back">Back</a>
+                <div className="info">
+                    <h1>{this.state.user.firstName} here is a summary of your operations</h1>
+                </div>
+
                 <div className="user">
                     <div>
-                        <h1>{this.state.user.firstName} {this.state.user.lastName}</h1>
+                        <h3>{this.state.user.firstName} {this.state.user.lastName}</h3>
+                        <p>{this.state.user.email}</p>
                     </div>
-                    <h1>{this.state.user.email}</h1>
+
                 </div>
                 {this.state.favouriteProducts ? <FavouriteProducts favourites={this.state.favouriteProducts}/> : null}
+                <div className="enter">enter</div>
                 {this.state.orderedProducts ?
                     <OrderedProducts ordered={this.state.orders} products={this.state.orderedProducts}/> : null}
                 {this.state.payments ? <Payments payments={this.state.payments}/> : null}

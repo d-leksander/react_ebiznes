@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import "../styles/product.css";
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import StarsIcon from '@material-ui/icons/Stars';
 
 class Product extends Component {
 
@@ -55,8 +57,8 @@ class Product extends Component {
         const productData = this.props.productData;
         const user = this.props.user;
         return (
-            <div className="prodView">
-            <div className="product">
+            <div className="prodOutherView">
+            <div className="prodInnerView">
                 <div className="productSpecs">
                     <h3 className="title">{productData.name}</h3>
                     <h1 className="price">{productData.price}$</h1>
@@ -64,14 +66,15 @@ class Product extends Component {
                 <p className="description">{productData.description}</p>
 
             </div>
+
                 <div className="productOperation">
                     <button className="addToCartButton"
                             onClick={() => this.addToCart(user.id, productData.idProducts)}>
-                        Add to cart
+                        <ShoppingCartIcon fontSize="small" style={{color: "lightblue"[50]}}/> Add to cart
                     </button>
                     <button className="addToFavouriteButton"
                             onClick={() => this.addToFavourites(user.id, productData.idProducts)}>
-                        Favourite
+                        <StarsIcon fontSize="small" style={{color: "lightblue"[50]}}/> Favourite
                     </button>
                 </div>
             </div>

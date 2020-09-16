@@ -66,3 +66,18 @@ nav {
     flex-direction: column;
     align-items: center;
 }
+.logout {
+    position: absolute;
+    top: 2vh;
+    right: 1vw;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: #6b80ee;
+    color: whitesmoke;
+    padding: 5px;
+}
+.logout:hover {
+    color: #ad0329;
+    padding: 10px;
+}

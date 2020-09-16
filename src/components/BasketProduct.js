@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import "../styles/product.css";
 import {refreshPage} from "../helpers/reload"
+import RemoveShoppingCartIcon from '@material-ui/icons/RemoveShoppingCart';
 
 class BasketProduct extends Component {
 
@@ -30,19 +31,24 @@ class BasketProduct extends Component {
     render() {
         const productData = this.props.productData;
         return (
-            <div className="product">
-                <div className="productSpecs">
-                    <h1 className="title">{productData.name}</h1>
-                    <h1 className="price">{productData.price}$</h1>
+            <div className="favOutherView">
+                <div className="favInnerView">
+                    <div className="productSpecs">
+                    <h3 className="title">{productData.name}</h3>
+                    <h1 className="price">{productData.price} zł</h1>
                 </div>
-                <p className="description">{productData.description}</p>
-                <button className="deleteFromCartButton"
-                        onClick={() => {
-                            this.deleteFromCart(productData.idBaskets)
-                            refreshPage();
-                        }}
-                >Remove item
+                    <p className="description">{productData.description}</p>
+                </div>
+
+                <div className="basketOperation">
+                    <button className="deleteFromCartButton" onClick={() => {
+                    this.deleteFromCart(productData.idBaskets)
+                    refreshPage();
+                }}
+                ><RemoveShoppingCartIcon fontSize="small" style={{color: "lightblue"[50]}}/> Remove item
                 </button>
+                </div>
+
             </div>
         )
     }
